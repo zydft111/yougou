@@ -1,0 +1,8 @@
+<!--components/search/index.wxml-->
+ <!-- 头部搜索栏 -->
+  <navigateTo url=''>
+    <view class='search background '>
+      <view class='search-input {{align}}'>
+        <icon type="search" size="14" />{{keyword}}</view>
+    </view>
+  </navigateTo>

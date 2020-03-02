@@ -1,0 +1,31 @@
+/* components/search/index.wxss */
+.search {
+  padding: 20rpx;
+  background-color: #ff2d4a;
+}
+
+.search-input {
+  display: flex;
+    /* justify-content: center;   */
+  align-items: center;
+  height: 60rpx;
+   background-color: #fff; 
+  border-radius: 4px;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.search-input icon {
+  margin-right: 5px;
+}
+.left{
+    justify-content: flex-start;
+}
+
+.center{
+    justify-content: center;
+}
+
+ .right{
+    justify-content: flex-end;
+} 

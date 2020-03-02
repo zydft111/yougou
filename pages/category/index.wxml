@@ -1,0 +1,36 @@
+<!--pages/category/index.wxml-->
+<view class='container'>
+  <!-- 搜索组件 -->
+  <search/>
+  <!-- 内容主题部分 -->
+  <view class='content'>
+    <!-- 左侧边栏 -->
+    <view class='leftSlide'>
+      <block wx:for="{{navList}}" wx:key="index">
+        <view class="menu-item {{ current === index ? 'active' : '' }}" bindtap="handleClick" data-index="{{index}}">
+          {{item.cat_name}}
+        </view>
+      </block>
+    </view>
+    <!-- 右边内容部分 -->
+    <view class='rightSlide'>
+      <block wx:for="{{navList[current].children}}" wx:key="index">
+        <view class='categoryList'>
+          <view class='categoryTitle'>
+            /
+            <text>{{item.cat_name}}</text>/
+          </view>
+          <!-- logo列表 -->
+          <view class='productList'>
+            <block wx:for="{{item.children}}" wx:key="index">
+              <navigator url="">
+                <image mode="widthFix" src="{{ item.cat_icon }}"></image>
+                <view>{{ item.cat_name }}</view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

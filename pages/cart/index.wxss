@@ -32,3 +32,17 @@
     height: 15rpx;
     display: block;
 }
+.goods-list-title {
+    border-top:20rpx #eee solid;
+    padding: 20rpx 16rpx;
+    display: flex;
+    align-items: center;
+    border-bottom:1px #eee solid;
+    font-size: 14px;
+    color: #666;
+}
+.goods-list-title text {
+  margin-right: 20rpx;
+  color: #000;
+  font-size: 14px;
+}

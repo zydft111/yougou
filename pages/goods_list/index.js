@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    keyword: '华为',
+    keyword: '小米',
     goods: [],
     pagenum: 1,
     isLoading: true,

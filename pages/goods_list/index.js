@@ -45,7 +45,7 @@ Page({
         goods: [...this.data.goods, ...newdata],
         isloading: false
       })
-      console.log(this.data.goods)
+      // console.log(this.data.goods)
       if (this.data.goods.length >= message.total) {
         this.setData({
           hasMore: false
@@ -55,7 +55,7 @@ Page({
   },
   // 拉到达底部事件
   onReachBottom() {
-    console.log(1)
+    // console.log(1)
     if (this.data.isLoading === false) {
       this.setData({
         isLoading: true,

@@ -4,7 +4,8 @@
     "pages/cart/index",
     "pages/personal/index",
     "pages/category/index",
-    "pages/goods_list/index"
+    "pages/goods_list/index",
+    "pages/goods_detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,8 +14,7 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "custom": true,
-    "color": "#000000",
+    "color": "#000",
     "selectedColor": "#ff2d4a",
     "borderStyle": "black",
     "list": [
@@ -43,5 +43,6 @@
         "selectedIconPath": "images/icon_me_active@3x.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

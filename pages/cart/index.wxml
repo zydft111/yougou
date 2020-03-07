@@ -1,2 +1,24 @@
 <!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="container">
+  <!-- 当收货地址存在时显示收货地址 -->
+  <view class="address" wx:if="{{address.name}}">
+    <view class="address-info">
+      <view>收货人：{{address.name}}</view>
+      <view class="tel">{{address.tel}}</view>
+    </view>
+
+    <view class="address-detail">
+      收货地址：{{address.detail}}
+    </view>
+
+    <image mode="aspectFill" src="../../images/cart_border@2x.png"></image>
+  </view>
+  <!-- 收货地址不存在时 -->
+   <view class="address" wx:if="{{!address.name}}" bindtap="handleGetAddress">
+        <view class="address-info">
+            <view>获取收货地址</view>
+            <view class="tel"></view>
+        </view>
+        <image mode="aspectFill" src="../../images/cart_border@2x.png"></image>
+    </view>
+</view>

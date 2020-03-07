@@ -1,1 +1,34 @@
 /* pages/cart/index.wxss */
+.address-info{
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-info .tel{
+    display: flex;
+    align-items: center;
+}
+
+.address-info .tel::after{
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-left: 1px #999 solid;
+    border-top: 1px #999 solid;
+    transform: rotate(135deg);
+    margin-left:10px;
+}
+
+
+.address-detail{
+    padding: 20rpx;
+    padding-top:0;
+}
+
+.address image{
+    width:750rpx;
+    height: 15rpx;
+    display: block;
+}

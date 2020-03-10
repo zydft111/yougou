@@ -78,7 +78,8 @@ Page({
         goods_name: this.data.goods_detail.goods_name,
         goods_price: this.data.goods_detail.goods_price,
         goods_small_logo: this.data.goods_detail.goods_small_logo,
-        number: 1
+        number: 1,
+        select: true 
       })
 
       wx.showToast({
